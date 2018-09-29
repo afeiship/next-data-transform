@@ -2,7 +2,11 @@
 > Data transform for next
 
 
-## resources:
+## usage:
+```js
+import NxDataTransform from 'next-data-transform';
 
-## todos:
-- [ ] unit test case
+//data type:
+NxDataTransform.json(data);
+NxDataTransform.urlencoded(data);
+```
