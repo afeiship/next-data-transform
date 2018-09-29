@@ -1,0 +1,27 @@
+{
+  "name": "next-data-transform",
+  "version": "0.0.1",
+  "description": "Data transform for next",
+  "main": "dist/next-data-transform.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/next-data-transform",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "build",
+    "gulpfile.js"
+  ]
+}
