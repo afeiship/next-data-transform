@@ -12,7 +12,11 @@
         return nx.param(inData);
       },
       multipart: function(inData) {
-        return inData;
+        var data = new FormData();
+        nx.forIn(inData, function(key, value) {
+          data.append(key, value);
+        });
+        return data;
       }
     }
   });
