@@ -7,9 +7,11 @@ npm install -S afeiship/next-data-transform --registry=https://registry.npm.taob
 ```
 
 ## apis
-| api | params | description   |
-|-----|--------|---------------|
-| get | -      | desc balabala |
+| api        | params | description                       |
+| ---------- | ------ | --------------------------------- |
+| json       | -      | application/json;charset=utf-8    |
+| urlencoded | -      | application/x-www-form-urlencoded |
+| multipart  | -      | multipart/form-data               |
 
 ## usage
 ```js
@@ -17,6 +19,3 @@ import NxDataTransform from 'next-data-transform';
 
 // code goes here:
 ```
-
-## resources
-- https://github.com/afeiship
