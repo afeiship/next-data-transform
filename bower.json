@@ -1,7 +1,6 @@
 {
   "name": "next-data-transform",
-  "version": "1.0.0",
-  "description": "Data transform for next",
+  "description": "Data transform for next.",
   "main": "dist/next-data-transform.js",
   "authors": [
     "afei"
