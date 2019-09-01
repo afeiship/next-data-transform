@@ -9,7 +9,7 @@
         return JSON.stringify(inData);
       },
       urlencoded: function(inData) {
-        return nx.param(inData);
+        return nxParam(inData);
       },
       multipart: function(inData) {
         var data = new FormData();

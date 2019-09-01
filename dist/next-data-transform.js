@@ -2,7 +2,7 @@
  * name: next-data-transform
  * url: https://github.com/afeiship/next-data-transform
  * version: 1.0.0
- * date: 2019-08-20T12:15:04.250Z
+ * date: 2019-09-01T13:49:39.300Z
  * license: MIT
  */
 
@@ -17,7 +17,7 @@
         return JSON.stringify(inData);
       },
       urlencoded: function(inData) {
-        return nx.param(inData);
+        return nxParam(inData);
       },
       multipart: function(inData) {
         var data = new FormData();
