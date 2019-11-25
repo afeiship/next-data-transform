@@ -3,7 +3,7 @@
 
 ## installation
 ```bash
-npm install -S afeiship/next-data-transform --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-data-transform
 ```
 
 ## apis
@@ -15,7 +15,7 @@ npm install -S afeiship/next-data-transform --registry=https://registry.npm.taob
 
 ## usage
 ```js
-import NxDataTransform from 'next-data-transform';
+import NxDataTransform from '@feizheng/next-data-transform';
 
 // code goes here:
 ```

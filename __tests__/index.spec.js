@@ -1,5 +1,5 @@
 (function() {
-  var nx = require('next-js-core2');
+  var nx = require('@feizheng/next-js-core2');
   var NxDataTransform = require('../src/next-data-transform');
 
   describe('NxDataTransform.methods', function() {

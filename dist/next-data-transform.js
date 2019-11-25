@@ -1,15 +1,15 @@
 /*!
- * name: next-data-transform
+ * name: @feizheng/next-data-transform
  * url: https://github.com/afeiship/next-data-transform
  * version: 1.0.0
- * date: 2019-09-01T13:49:39.300Z
+ * date: 2019-11-25T07:52:28.729Z
  * license: MIT
  */
 
 (function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
-  var nxParam = nx.param || require('next-param');
+  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nxParam = nx.param || require('@feizheng/next-param');
 
   var NxDataTransform = nx.declare('nx.DataTransform', {
     statics: {
