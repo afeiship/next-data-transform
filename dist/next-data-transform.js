@@ -1,8 +1,8 @@
 /*!
  * name: @feizheng/next-data-transform
  * url: https://github.com/afeiship/next-data-transform
- * version: 1.0.0
- * date: 2019-11-25T07:52:28.729Z
+ * version: 1.1.0
+ * date: 2020-01-05T04:35:10.687Z
  * license: MIT
  */
 
@@ -13,6 +13,9 @@
 
   var NxDataTransform = nx.declare('nx.DataTransform', {
     statics: {
+      raw: function(inData) {
+        return inData;
+      },
       json: function(inData) {
         return JSON.stringify(inData);
       },

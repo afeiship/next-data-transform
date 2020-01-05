@@ -16,5 +16,10 @@
       expect(rs1).toBe('{"key":1,"value":2}');
       expect(rs2).toBe('key=1&value=2');
     });
+
+    test('transform raw:', () => {
+      var res = NxDataTransform.raw('key=1&value=2');
+      expect(res).toBe('key=1&value=2');
+    });
   });
 })();

@@ -5,6 +5,9 @@
 
   var NxDataTransform = nx.declare('nx.DataTransform', {
     statics: {
+      raw: function(inData) {
+        return inData;
+      },
       json: function(inData) {
         return JSON.stringify(inData);
       },
