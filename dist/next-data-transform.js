@@ -2,7 +2,7 @@
  * name: @feizheng/next-data-transform
  * url: https://github.com/afeiship/next-data-transform
  * version: 1.1.0
- * date: 2020-01-05T04:35:10.687Z
+ * date: 2020-01-05T04:36:55.499Z
  * license: MIT
  */
 
