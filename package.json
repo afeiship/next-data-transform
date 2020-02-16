@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-data-transform",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Data transform for next.",
   "homepage": "https://github.com/afeiship/next-data-transform",
   "author": {
@@ -14,7 +14,7 @@
   "main": "dist/next-data-transform.js",
   "license": "MIT",
   "devDependencies": {
-    "@feizheng/next-nice-comments": "^1.0.0",
+    "@feizheng/next-nice-comments": "^1.0.1",
     "@feizheng/rake-git": "^1.2.1",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -32,8 +32,8 @@
     "yargs": "^15.1.0"
   },
   "dependencies": {
-    "@feizheng/next-js-core2": "^2.4.0",
-    "@feizheng/next-param": "^1.1.0"
+    "@feizheng/next-js-core2": "^2.4.1",
+    "@feizheng/next-param": "^1.1.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
