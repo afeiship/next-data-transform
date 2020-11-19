@@ -1,22 +1,20 @@
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
-  var nxParam = nx.param || require('@feizheng/next-param');
+  var nx = global.nx || require('@jswork/next');
+  var nxParam = nx.param || require('@jswork/next-param');
 
   var NxDataTransform = nx.declare('nx.DataTransform', {
     statics: {
-      raw: function(inData) {
-        return inData;
-      },
-      json: function(inData) {
+      raw: nx.stubValue,
+      json: function (inData) {
         return JSON.stringify(inData);
       },
-      urlencoded: function(inData) {
+      urlencoded: function (inData) {
         return nxParam(inData);
       },
-      multipart: function(inData) {
+      multipart: function (inData) {
         var data = new FormData();
-        nx.forIn(inData, function(key, value) {
+        nx.forIn(inData, function (key, value) {
           data.append(key, value);
         });
         return data;

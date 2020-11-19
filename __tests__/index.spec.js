@@ -1,24 +1,21 @@
-(function() {
-  var nx = require('@feizheng/next-js-core2');
-  var NxDataTransform = require('../src/next-data-transform');
+(function () {
+  const NxDataTransform = require('../src');
 
-  describe('NxDataTransform.methods', function() {
-    test('json/urlencoded', function() {
-      var data1 = {
-        key: 1,
-        value: 2
-      };
-
-      var rs1 = NxDataTransform.json(data1);
-      var rs2 = NxDataTransform.urlencoded(data1);
-
-      // console.log(rs1, rs2);
-      expect(rs1).toBe('{"key":1,"value":2}');
-      expect(rs2).toBe('key=1&value=2');
+  describe('NxDataTransform.methods', function () {
+    test('json', function () {
+      const data = { key: 1, value: 2 };
+      const res = NxDataTransform.json(data);
+      expect(res).toBe('{"key":1,"value":2}');
     });
 
-    test('transform raw:', () => {
-      var res = NxDataTransform.raw('key=1&value=2');
+    test('urlencoded', function () {
+      const data = { key: 1, value: 2 };
+      const res = NxDataTransform.urlencoded(data);
+      expect(res).toBe('key=1&value=2');
+    });
+
+    test('raw', () => {
+      const res = NxDataTransform.raw('key=1&value=2');
       expect(res).toBe('key=1&value=2');
     });
   });
