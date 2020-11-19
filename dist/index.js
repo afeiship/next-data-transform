@@ -3,7 +3,7 @@
  * description: Data transform for next.
  * homepage: https://github.com/afeiship/next-data-transform
  * version: 1.0.0
- * date: 2020-11-19 13:34:33
+ * date: 2020-11-19 13:41:29
  * license: MIT
  */
 

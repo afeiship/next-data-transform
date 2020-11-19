@@ -37,5 +37,12 @@
   },
   "dependencies": {
     "@jswork/next-param": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "next",
+    "data",
+    "transform",
+    "json",
+    "urlencoded"
+  ]
 }
