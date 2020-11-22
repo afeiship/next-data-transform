@@ -21,7 +21,7 @@ npm install -S @jswork/next-data-transform
 
 ## usage
 ```js
-import NxDataTransform from '@feizheng/next-data-transform';
+import NxDataTransform from '@jswork/next-data-transform';
 
 const data = { key: 1, value: 2 };
 
