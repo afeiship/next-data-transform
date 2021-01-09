@@ -2,8 +2,8 @@
  * name: @jswork/next-data-transform
  * description: Data transform for next.
  * homepage: https://github.com/afeiship/next-data-transform
- * version: 1.0.1
- * date: 2021-01-06 21:44:39
+ * version: 1.0.2
+ * date: 2021-01-09 16:21:16
  * license: MIT
  */
 
