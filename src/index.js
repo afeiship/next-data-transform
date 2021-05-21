@@ -6,18 +6,22 @@
   var NxDataTransform = nx.declare('nx.DataTransform', {
     statics: {
       raw: nx.stubValue,
-      json: function (inData) {
+      __json__: function (inData) {
         return JSON.stringify(inData);
       },
-      urlencoded: function (inData) {
+      __urlencoded__: function (inData) {
         return nxParam(inData);
       },
-      multipart: function (inData) {
+      __multipart__: function (inData) {
         var data = new FormData();
-        nx.forIn(inData, function (key, value) {
-          data.append(key, value);
-        });
+        nx.forIn(inData, data.append);
         return data;
+      },
+      'json,urlencoded,multipart': function (inName) {
+        return function (inData) {
+          if (!inData || typeof inData !== 'object') return inData;
+          return this['__' + inName + '__'].call(this, inData);
+        };
       }
     }
   });
