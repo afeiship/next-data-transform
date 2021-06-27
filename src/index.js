@@ -14,7 +14,9 @@
       },
       __multipart__: function (inData) {
         var data = new FormData();
-        nx.forIn(inData, data.append);
+        nx.forIn(inData, function (key, value) {
+          data.append(key, value);
+        });
         return data;
       },
       'json,urlencoded,multipart': function (inName) {
